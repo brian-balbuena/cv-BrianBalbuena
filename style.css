@@ -5,93 +5,493 @@
 
 /* hero */
 .navbar {
-    position: fixed;
+    position: relative;
     
 }
 
-
-
 .hero {
-display:block;
-background-image: url(imagenes/fondo.png);
-background-repeat: no-repeat;
-height: 700px;
+    display:block;
+    background-image: url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    height: 700px;
 
+}
 
+.webA {
+    position: absolute;
+    display: block;
+    bottom: 40%;
+    left: 20%;
+}
 
-    /* background: rgb(0,0,3);
-background: radial-gradient(circle, rgba(0,0,3,1) 0%, rgba(237,124,10,1) 100%); */
+.web {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
 }
 
 
 
-h1 {
-display: inline;
-position: absolute; 
-bottom: 40%;
-left: 20%;
-
-}
 
 h1::before {
     content: " ";
-    display: block;
-    background-color: red;
+    position: absolute;
+    background-color: #E10600;
     height: 3px;
-    width: 30px;
+    width: 100px;
+    animation: linea 3s ease;
+} 
+
+#punto {
+    color: #E10600;
+    animation: linea 3s ease;
 }
 
-h4 {
+
+@keyframes linea {
+
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+     
+    100% {
+        width: 100px;
+        opacity: 1;
+        
+    }
+}
+
+/* h4 {
     display: inline;
-position: absolute;
+position: relative;
 color: aqua;
-padding-left: 50px;
+padding-left: 35px;
 text-align: center;
-bottom: 55%;
-transform: rotate(90deg);
 
-}
 
-h4::after {
+
+} */
+
+ /* h4::after {
 
     content: " ";
-    display: block;
+    position: absolute;
     background-color: red;
     height: 3px;
-    width: 50px;
+    width: 50%;
+    bottom: 0;
+    
    
-}
+}  */
 
-span {
-    color: red;
-}
 
-.deco {
-    display: inline;
+ #normal {
+
+    bottom: 60%;
+    left: 30%;
+}
+h4::before {
+
+    content: " ";
     position: absolute;
-    border: solid 3px red;
-    width: 50px;
-   height: 150px;
-   text-align: center;
-    bottom: 57%;
-    right: 38%;
-    background-color: red;
-    opacity: 0.1;
-}
+    background-color: #E10600;
+    height: 3px;
+    width: 70px;
+    animation: linea 3s ease;
+    
+} 
 
-/* .hero {
 
-    transform:skew(0deg , 8deg) translateY(-100px);
-} */
+
+#espejo {
+
+    transform: rotate(180deg);
+    left: 33%;
+   
+} 
 
 
 /* acercademi */
 
+ .aboutme {
+    position: relative;
+    height: 500px;
+   
+
+}
+
+.me {
+
+    /* posicion */
+    position: absolute;
+    display: inline;  
+    height: 16rem;
+    right: 0; 
+    width: 33.33%;
+    top: -20%;
+    /* estilo */
+    box-shadow: 0 0 .2rem #fff,
+     0 0 .2rem #fff,
+     0 0 2rem #000000,
+     0 0 0.8rem #000000,
+     0 0 2.8rem #000000,
+     inset 0 0 1.3rem #000000; 
+     border-radius: 10px;
+    /* animation: neon 5s ease; */
+
+    /* letra */
+    color: black;
+}
+
+
+/* .me::after {
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 3px;
+    width: 70px;
+    animation: linea 3s ease;
+
+} */
+
+
+.parrafome{
+    position: relative;
+    margin-top: 20px;
+}
+
+.personal {
+     /* posicion */
+     position: absolute;
+     display: inline;
+     height: 15.9rem;
+     right: 55%;
+     width: 33.33%;
+     top: 33.33%;
+     /* estilo */
+      box-shadow: 0 0 .2rem #fff,
+     0 0 .2rem #fff,
+     0 0 2rem #E10600,
+     0 0 0.8rem #E10600,
+     0 0 2.8rem #E10600,
+     inset 0 0 1.3rem #E10600; 
+     border-radius: 10px;
+     /* animation: neon 5s ease;  */
+}
+
+@keyframes neon {
+    0% {
+
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #E10600,
+        0 0 0.8rem #E10600,
+        0 0 2.8rem #E10600,
+        inset 0 0 1.3rem #E10600; 
+        opacity: 0;
+    }
+
+  
+    100% {
+
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #E10600,
+        0 0 0.8rem #E10600,
+        0 0 2.8rem #E10600,
+        inset 0 0 1.3rem #E10600; 
+        opacity: 1;
+
+    }
+}
+
+
+.img {
+  /* posicion */
+  position: absolute;
+  display: inline;
+  height: 16rem;
+  right: 66.66%;
+  width: 33.33%;
+  top: 33.33%;
+  /* estilo */
+  
+} 
+
+.lista {
+    position: absolute;
+    display: inline;
+    color: #000000;
+    left: 35%;
+    list-style-type: none;
+
+}
+
+li {
+padding: 3px;
+
+
+}
+
+/* .list-group::after {
+    
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 3px;
+    width: 70px;
+    animation: linea 3s ease;
+} */
+
+.parrafopers {
+   
+    color: #000000;
+    margin-top: 5px;
+}
+
 /* educacion  */
 
+ /* .edu {
+    position: relative;
+    height: 500px;
+    
+} 
+
+
+.educa {
+    
+    position:absolute;
+    display: inline;
+    width: 250px;
+    height: 250px;
+   
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #ffffff,
+    0 0 0.8rem #ffffff,
+    0 0 2.8rem #ffffff,
+    inset 0 0 1.3rem #ffffff; 
+}
+
+#uno {
+    right: 12%;
+    bottom: 83%;
+}
+
+#dos {
+    right: 66%;
+    bottom: 35%;
+}
+
+#tres {
+    right: 1%;
+    bottom: 7%;
+}
+
+#cuatro {
+    right: 72%;
+    bottom: -26%;
+}
+
+#textedu {
+
+    position:absolute;
+    display: inline;
+    bottom: 43%;
+    right: 22%;
+    color: #000000;
+}
+
+#textedu::after {
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 3px;
+    width: 70px;
+    animation: linea 3s ease; 
+} */
+
+
+.edu {
+    position: relative;
+    height: 500px;
+    
+   
+} 
+
+
+
+
+#uno {
+    position: absolute;
+    display: inline;
+    right: 33.33%;
+    bottom: 50%;
+    height: 250px;
+    width: 66.66%;
+    background-color: #000000;
+
+   
+}
+
+#dos {
+    position: absolute;
+    display: inline;
+    right: 0%;
+    bottom: 50%;
+    height: 250px;
+    width: 33.33%;
+    background-color: #2f2f2f; 
+    color: #000000; 
+}
+
+#tres {
+    position: absolute;
+    display: inline;
+    right: 66.66%;
+    bottom: 0%;
+    height: 250px;
+    width: 33.33%;
+    background-color: #707070; 
+    color: #000000;
+}
+
+#cuatro {
+    position: absolute;
+    display: inline;
+    right: 33.33%;
+    bottom: 0%;
+    height: 250px;
+    width: 33.33%;
+    background-color: #575757; 
+    color: #000000;
+}
+
+#cinco {
+    position: absolute;
+    display: inline;
+    right: 0%;
+    bottom: 0%;
+    height: 250px;
+    width: 33.33%;
+    background-color:#404040; 
+    color:#000000;
+    
+}
+
+
+#textedu {
+    position:absolute;
+    display: inline;
+    bottom: 41.5%;
+    right: 41.5%;
+    color: #707070;
+}
+
+
+#textdos {
+    padding-top: 30px;
+}
+
+.deco {
+    position: absolute;
+    display: inline;
+    right: 56.8%;
+    bottom: 50%;
+    height: 250px;
+    width: 10%;
+    border: solid 2px #E10600;
+    z-index: 1;
+    background-color: #E10600;
+    opacity: .3;
+    animation: expandir 4s ease;
+}
+
+@keyframes expandir {
+    0% {
+
+        bottom: 50%;
+        height: 250px;
+    }
+
+    25% {
+        bottom: 47%;
+        height: 280px;
+    }
+
+    50%{
+
+        bottom: 47%;
+        height: 280px;
+
+    }
+
+    100% {
+
+        bottom: 50%;
+        height: 250px;
+    }
+}
 
 
 /* experiencia */
 
 
 /* skills */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    
+    .web, .webA {
+        
+        display: contents;
+      
+    
+    }
+ 
+    .me {
+
+        
+        width:100%;
+        
+        
+    } 
+
+    .personal {
+        width:100%;
+        right: 0;
+
+    }
+
+    .img {
+
+        width:100%;
+        right: 78px;
+        top: -71.67%;
+    }
+
+  #uno {
+        width: 100%;
+        right: 0;
+    }
+
+    #dos{
+        bottom: 0;
+    }
+
+}
+
+
