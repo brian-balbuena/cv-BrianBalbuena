@@ -1,7 +1,5 @@
 
-*{
-    
-}
+
 
 /* hero */
 .navbar {
@@ -12,6 +10,7 @@
 .hero {
     display:block;
     background-image: url(imagenes/fondo.png);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
 
@@ -19,15 +18,14 @@
 
 .webA {
     position: absolute;
-    display: block;
-    bottom: 40%;
-    left: 20%;
+    bottom: 65%;
+    left: 50%;
 }
 
 .web {
     position: absolute;
-    bottom: 40%;
-    right: 20%;
+    bottom: 65%;
+    right: 20 %;
 }
 
 
@@ -440,8 +438,240 @@ padding: 3px;
 
 /* skills */
 
+.skill {
+    position: relative;
+    height: 650px;
+    
+}
+
+.visualA, .visualB, .visualC, .visualD {
+    position: absolute;
+    display: inline;
+} 
+
+.visualA {
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    right: 50%;
+    background-color: #E10600;
+    opacity: .2;
+}
+
+.visualB {
+    width: 40%;
+    height: 200px;
+    top: 69%;
+    right: 38.33%;
+    background-color: #707070;
+    opacity: .6;
+}
+
+.visualC {
+    width: 500px;
+    height: 158px;
+    top: 7.33%;
+    left: 45%;
+    background-color: #fffff0;
+    opacity: .5;
+}
+
+/* .visualD {
+    width: 500px;
+    height: 200px;
+    top: 20%;
+    bottom: 20%;
+    border: #000000 solid 2px;
+} */
 
 
+ .barra, .progreso, .numskill, .textskill, .lineA,
+ .lineB, .lineC, .lineD {
+    position: absolute;
+    display: inline;
+   
+}
+.textskill {
+    left: 45%;
+    color: #241c1c;
+    
+}
+
+
+
+.lineA {
+    top: 10%;
+    right: 55%;
+    animation: li 3s ease;
+}
+.lineA::before {
+
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 3px;
+    width: 72px;
+    
+
+}
+
+
+
+.lineB {
+    top: 10%;
+    right: 35.22%;
+    animation: lin 3s ease;
+    
+}
+.lineB::before {
+
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 3px;
+    width: 72px;
+    right: 3px;
+    
+}
+
+@keyframes lin {
+
+    0% {
+        top: 7%;
+        width: 0;
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+
+    100% {
+        top: 10%;
+        transform: rotate(0deg);
+        width: 71px;        
+        opacity: 1;
+        
+    }
+}
+
+@keyframes li {
+    0% {       
+        top: 7%;
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+
+    100% { 
+        top: 10%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+.palabra {
+    
+    color: #241c1c;
+    font-size: 20rem;
+    display: inline;
+    opacity: 0.5;
+    
+}
+ 
+.barra {
+    background-color: rgba(225, 6, 0, 0.5);
+    width: 200px;
+    height: 200px;
+    
+
+}
+
+
+.progreso {
+background-color: #E10600;
+opacity: 1;
+width: 200px;
+height: 200px;
+
+
+}
+
+.barracont {
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+#barraA {
+
+}
+
+#barraB {
+    top: 25%;
+}
+
+#barraC {
+    top: 50%;
+}
+
+#barraD {
+    top: 75%;
+}
+
+#barraE {
+    top:100%
+}
+
+
+/* trajetas */
+
+.tarjeta {
+    position: relative;
+    perspective: 1000px;
+    width: 200px;
+    height: 300px;
+    background-color: #E10600;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+
+.frente, .reversa {
+
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.frente {
+    transform: rotateY(0deg);
+}
+
+.reversa {
+    transform: rotateY(180deg);
+}
+
+
+.tarjeta:hover .frente {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .reversa {
+    transform: rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+  
 
 
 
