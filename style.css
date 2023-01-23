@@ -25,7 +25,7 @@
 .web {
     position: absolute;
     bottom: 65%;
-    right: 20 %;
+    right: 20%;
 }
 
 
@@ -566,6 +566,21 @@ padding: 3px;
     }
 }
 
+/* boton skill developer */
+
+.skilldeveloper {
+    position: absolute;
+    display: block;
+    top: 45%;
+    width: 100%;
+    left: -1%;
+}
+
+.collapse {
+    position: relative;
+    display: inline;
+}
+
 .palabra {
     
     color: #241c1c;
@@ -577,18 +592,20 @@ padding: 3px;
  
 .barra {
     background-color: rgba(225, 6, 0, 0.5);
+    height: 20PX;
+    justify-content: center;
+    height: 30px;
     width: 200px;
-    height: 200px;
-    
-
+    top: 20%;
+    left: 7%;
 }
 
 
 .progreso {
 background-color: #E10600;
 opacity: 1;
-width: 200px;
-height: 200px;
+height: 30px;
+
 
 
 }
@@ -596,91 +613,137 @@ height: 200px;
 .barracont {
     position: absolute;
     top: 40%;
-    left: 33%;
-    height: 300px;
-    width: 400px;
+    height: 200px;
 }
 
-
-
-
-
-
-
 #barraA {
-
+    width: 180px;
+    left: 20px;
 }
 
 #barraB {
-    top: 25%;
+    width: 160px;
+    left: 40px;
 }
 
 #barraC {
-    top: 50%;
+    width: 140px;
+    left: 60px;
 }
 
 #barraD {
-    top: 75%;
+    width: 190px;
+    left: 10px;
 }
-
-#barraE {
-    top:100%
-}
-
 
 /* trajetas */
 
 .tarjeta {
     position: relative;
+    display: inline;
     perspective: 1000px;
-    width: 200px;
-    height: 300px;
-    background-color: #E10600;
-    border-radius: 20px;
-    border: solid black 2px;
+    width: 150px;
+    height: 150px;
+    margin: 0 50px 0 50px;
+    justify-content: center;
 }
 
 .frente, .reversa {
-
+    position: absolute;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 1s ease;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 75%;
+    height: 100%;
+    color: rebeccapurple ;
+    
 }
+
+.textend {
+    position: relative;
+    display: inline;
+    top: 20%;
+}
+
+.textback {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.numkill{
+    position: absolute;
+    display: inline;
+    justify-content: center;
+    top: 32%;
+    left: 27%;
+    font-size: 3rem;
+    transform: rotate(180deg);
+}
+
 
 .frente {
-    transform: rotateY(0deg);
-}
+ transform: rotateY(0deg); 
+}    
 
 .reversa {
-    transform: rotateY(180deg);
+    position: absolute;
+    transform: rotateY(180deg); 
+       
 }
 
 
-.tarjeta:hover .frente {
+
+ .tarjeta:hover .frente {
     transform: rotateY(-180deg);
 }
 
 .tarjeta:hover .reversa {
     transform: rotateY(0deg);
+} 
+
+col {
+    margin: 20px;
 }
 
+#endA {
+top: 30%;
 
+}
 
+#endB {
+    top: 30%;
+}
 
+#endC {
+    
+}
 
-
-
+#endD {
+   top: 30%;
+}
 
   
 
 
 
+.botones {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    left: 32%;
+}
 
 
-
-
-
-
+#palabraskill {
+    font-size: x-large;
+}
 
 
 @media screen and (max-width:992px) {
