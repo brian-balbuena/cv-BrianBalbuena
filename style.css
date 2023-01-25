@@ -1,6 +1,5 @@
 
 
-
 /* hero */
 .navbar {
     position: relative;
@@ -459,10 +458,9 @@ padding: 3px;
 }
 
 .visualB {
-    width: 40%;
-    height: 200px;
-    top: 69%;
-    right: 38.33%;
+    width: 50%;
+    height: 100%;
+    right: 25%;
     background-color: #707070;
     opacity: .6;
 }
@@ -566,14 +564,14 @@ padding: 3px;
     }
 }
 
-/* boton skill developer */
+/* skill developer */
 
 .skilldeveloper {
     position: absolute;
-    display: block;
+    display: inline;
     top: 45%;
     width: 100%;
-    left: -1%;
+    left: 60px;
 }
 
 .collapse {
@@ -581,71 +579,32 @@ padding: 3px;
     display: inline;
 }
 
-.palabra {
-    
-    color: #241c1c;
-    font-size: 20rem;
-    display: inline;
-    opacity: 0.5;
-    
-}
- 
-.barra {
-    background-color: rgba(225, 6, 0, 0.5);
-    height: 20PX;
-    justify-content: center;
-    height: 30px;
-    width: 200px;
-    top: 20%;
-    left: 7%;
-}
 
-
-.progreso {
-background-color: #E10600;
-opacity: 1;
-height: 30px;
-
-
-
-}
-
-.barracont {
+.colapskills {
     position: absolute;
-    top: 40%;
-    height: 200px;
+    display: inline;
+    width: 250px;
+    height: 285px;
+    left: 27%;
+    top: 69px;
 }
 
-#barraA {
-    width: 180px;
-    left: 20px;
+.cardskills {
+    position: absolute;
+    height: 100%;
 }
 
-#barraB {
-    width: 160px;
-    left: 40px;
-}
-
-#barraC {
-    width: 140px;
-    left: 60px;
-}
-
-#barraD {
-    width: 190px;
-    left: 10px;
-}
-
-/* trajetas */
+/* trajetas developer*/
 
 .tarjeta {
-    position: relative;
+    position: absolute;
     display: inline;
     perspective: 1000px;
-    width: 150px;
-    height: 150px;
-    margin: 0 50px 0 50px;
+    width: 95%;
+    height: 12%;
+    margin: 12%;
     justify-content: center;
+    border: none;
 }
 
 .frente, .reversa {
@@ -653,18 +612,19 @@ height: 30px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 1s ease;
-    border: solid 2px black;
     border-radius: 15px;
-    width: 75%;
+    width: 66%;
     height: 100%;
-    color: rebeccapurple ;
+    color: #575757;
     
 }
+
 
 .textend {
     position: relative;
     display: inline;
     top: 20%;
+    font-size: 1.14rem;
 }
 
 .textback {
@@ -673,17 +633,16 @@ height: 30px;
     justify-content: center;
     height: 100%;
     width: 100%;
-    transform: rotate(180deg);
 }
 
 .numkill{
     position: absolute;
     display: inline;
     justify-content: center;
-    top: 32%;
-    left: 27%;
-    font-size: 3rem;
-    transform: rotate(180deg);
+    top: -5%;
+    left: 10%;
+    font-size: 1.7rem;
+    z-index: 1;;
 }
 
 
@@ -711,21 +670,22 @@ col {
     margin: 20px;
 }
 
+
 #endA {
-top: 30%;
+top: 0%;
 
 }
 
 #endB {
-    top: 30%;
+    top: 0%;
 }
 
 #endC {
-    
+    top: 0%;
 }
 
 #endD {
-   top: 30%;
+   top: 0%;
 }
 
   
@@ -733,17 +693,160 @@ top: 30%;
 
 
 .botones {
-    position: relative;
-    display: block;
+    position: absolute;
+    display: inline;
     width: 200px;
     height: 100px;
-    left: 32%;
+    left: 15%;
 }
 
 
 #palabraskill {
     font-size: x-large;
+
 }
+
+.palabra {
+    
+    color: #241c1c;
+    font-size: 20rem;
+    display: inline;
+    opacity: 0.5;
+    
+}
+
+.barracontdeveloper {
+    position: absolute;
+    height: 100%;
+}
+ 
+.barra {
+    background-color: rgba(225, 6, 0, 0.5);
+    height: 20PX;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 12px;
+}
+
+
+.progreso {
+background-color: #E10600;
+opacity: 1;
+height: 20PX;
+justify-content: center;
+height: 100%;
+width: 100%;
+top: 0%;
+left: 0%;
+border-radius: 12px;
+
+
+
+}
+
+
+
+#barraA {
+    width: 87%;
+   
+}
+
+#barraB {
+    width: 80%;
+    
+}
+
+#barraC {
+    width: 60%;
+   
+}
+
+#barraD {
+    width: 95%; 
+}
+
+/* skills idiomas */
+
+.skillidiomas {
+    position: absolute;
+    display: inline;
+    top: 45%;
+    width: 100%;
+    right: 2%;
+}
+
+.botonesidiomas {
+    position: absolute;
+    display: inline;
+    width: 204px;
+    height: 100px;
+    right: 17.5%;
+}
+
+
+.colapidiomas {
+    position: absolute;
+    display: inline;
+    width: 250px;
+    height: 285px;
+    left: 55%;
+    top: 69px;
+}
+
+.cardidiomas {
+    position: absolute;
+    height: 100%;
+}
+
+
+#barraAA {
+    width: 55%;
+}
+
+#barraBB {
+    width: 80%;
+}
+
+#barraCC {
+    width: 70%;
+}
+
+
+/* footer */
+
+.final {
+    position: relative;
+    height: 150px;
+    background-color: #2f2f2f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:992px) {
@@ -783,6 +886,41 @@ top: 30%;
 
     #dos{
         bottom: 0;
+    }
+
+    .skilldeveloper {
+        position: absolute;
+        display: inline;
+        top: 10%;
+        width: 100%;
+        right: 27%;
+        left: -6%;
+    }
+    
+
+    .colapskills {
+        position: absolute;
+    display: inline;
+    width: 239px;
+    height: 300px;
+    left: 15%;
+    top: 45px;
+    }
+
+    .skillidiomas {
+        position: absolute;
+        display: inline;
+        top: 58%;
+        width: 100%;
+        right: 23%;
+    }
+    .colapskills {
+        position: absolute;
+        display: inline;
+        width: 250px;
+        height: 285px;
+        left: 32%;
+        top: 43px;
     }
 
 }
