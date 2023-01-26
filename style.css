@@ -1,18 +1,16 @@
-
-
 /* hero */
 .navbar {
     position: relative;
-    
+
 }
 
 .hero {
-    display:block;
+    display: block;
     background-image: url(imagenes/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
-
+    box-shadow: inset 0px -20px 20rem 20px #000000;
 }
 
 .webA {
@@ -37,10 +35,11 @@ h1::before {
     height: 3px;
     width: 100px;
     animation: linea 3s ease;
-} 
+}
 
 #punto {
     color: #E10600;
+    opacity: .5;
     animation: linea 3s ease;
 }
 
@@ -51,11 +50,11 @@ h1::before {
         width: 0px;
         opacity: 0;
     }
-     
+
     100% {
         width: 100px;
-        opacity: 1;
-        
+        opacity: 0.5;
+
     }
 }
 
@@ -70,7 +69,7 @@ text-align: center;
 
 } */
 
- /* h4::after {
+/* h4::after {
 
     content: " ";
     position: absolute;
@@ -83,11 +82,12 @@ text-align: center;
 }  */
 
 
- #normal {
+#normal {
 
     bottom: 60%;
     left: 30%;
 }
+
 h4::before {
 
     content: " ";
@@ -96,8 +96,8 @@ h4::before {
     height: 3px;
     width: 70px;
     animation: linea 3s ease;
-    
-} 
+
+}
 
 
 
@@ -105,16 +105,16 @@ h4::before {
 
     transform: rotate(180deg);
     left: 33%;
-   
-} 
+
+}
 
 
 /* acercademi */
 
- .aboutme {
+.aboutme {
     position: relative;
     height: 500px;
-   
+
 
 }
 
@@ -122,23 +122,31 @@ h4::before {
 
     /* posicion */
     position: absolute;
-    display: inline;  
+    display: inline;
     height: 16rem;
-    right: 0; 
+    right: 0;
     width: 33.33%;
     top: -20%;
     /* estilo */
-    box-shadow: 0 0 .2rem #fff,
-     0 0 .2rem #fff,
-     0 0 2rem #000000,
-     0 0 0.8rem #000000,
-     0 0 2.8rem #000000,
-     inset 0 0 1.3rem #000000; 
-     border-radius: 10px;
+    box-shadow: 0 0 0.1rem #707070, 0 0 0.2rem #000000, 
+    0 0 2rem #000000, 0 0 20rem #000000, 0 0 0.2rem #000000, 
+    inset 0 0px 2rem #000000;
+    border-radius: 10px;
     /* animation: neon 5s ease; */
 
     /* letra */
     color: black;
+}
+
+#textme::before {
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 6px;
+    width: 47px;
+    left: 132px;
+    top: 25px;
+    transform: rotate(90deg);
 }
 
 
@@ -153,51 +161,45 @@ h4::before {
 } */
 
 
-.parrafome{
+.parrafome {
     position: relative;
     margin-top: 20px;
 }
 
 .personal {
-     /* posicion */
-     position: absolute;
-     display: inline;
-     height: 15.9rem;
-     right: 55%;
-     width: 33.33%;
-     top: 33.33%;
-     /* estilo */
-      box-shadow: 0 0 .2rem #fff,
-     0 0 .2rem #fff,
-     0 0 2rem #E10600,
-     0 0 0.8rem #E10600,
-     0 0 2.8rem #E10600,
-     inset 0 0 1.3rem #E10600; 
-     border-radius: 10px;
-     /* animation: neon 5s ease;  */
+    /* posicion */
+    position: absolute;
+    display: inline;
+    height: 15.9rem;
+    right: 55%;
+    width: 33.33%;
+    top: 33.33%;
+    z-index: 1;
+    /* estilo */
+    /* animation: neon 5s ease;  */
 }
 
 @keyframes neon {
     0% {
 
         box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #E10600,
-        0 0 0.8rem #E10600,
-        0 0 2.8rem #E10600,
-        inset 0 0 1.3rem #E10600; 
+            0 0 .2rem #fff,
+            0 0 2rem #E10600,
+            0 0 0.8rem #E10600,
+            0 0 2.8rem #E10600,
+            inset 0 0 1.3rem #E10600;
         opacity: 0;
     }
 
-  
+
     100% {
 
         box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #E10600,
-        0 0 0.8rem #E10600,
-        0 0 2.8rem #E10600,
-        inset 0 0 1.3rem #E10600; 
+            0 0 .2rem #fff,
+            0 0 2rem #E10600,
+            0 0 0.8rem #E10600,
+            0 0 2.8rem #E10600,
+            inset 0 0 1.3rem #E10600;
         opacity: 1;
 
     }
@@ -205,16 +207,17 @@ h4::before {
 
 
 .img {
-  /* posicion */
-  position: absolute;
-  display: inline;
-  height: 16rem;
-  right: 66.66%;
-  width: 33.33%;
-  top: 33.33%;
-  /* estilo */
-  
-} 
+    /* posicion */
+    position: absolute;
+    display: inline;
+    height: 16rem;
+    right: 66.66%;
+    width: 33.33%;
+    top: 33.33%;
+    z-index: 1;
+    /* estilo */
+
+}
 
 .lista {
     position: absolute;
@@ -226,7 +229,7 @@ h4::before {
 }
 
 li {
-padding: 3px;
+    padding: 3px;
 
 
 }
@@ -242,14 +245,40 @@ padding: 3px;
 } */
 
 .parrafopers {
-   
+
     color: #000000;
     margin-top: 5px;
 }
 
+/* visual acercademi */
+
+.visualmi {
+    position: absolute;
+    display: inline;
+}
+
+#miA {
+    height: 100%;
+    width: 21%;
+    background-color: #E10600;
+    opacity: 0.2;
+    left: 20%
+}
+
+#miB {
+
+    height: 51%;
+    width: 1.5%;
+    background-color: #707070;
+    opacity: 0.3;
+    right: 16.4%;
+    bottom: 69%;
+}
+
+
 /* educacion  */
 
- /* .edu {
+/* .edu {
     position: relative;
     height: 500px;
     
@@ -313,9 +342,9 @@ padding: 3px;
 .edu {
     position: relative;
     height: 500px;
-    
-   
-} 
+
+
+}
 
 
 
@@ -329,7 +358,7 @@ padding: 3px;
     width: 66.66%;
     background-color: #000000;
 
-   
+
 }
 
 #dos {
@@ -339,8 +368,8 @@ padding: 3px;
     bottom: 50%;
     height: 250px;
     width: 33.33%;
-    background-color: #2f2f2f; 
-    color: #000000; 
+    background-color: #2f2f2f;
+    color: #000000;
 }
 
 #tres {
@@ -350,7 +379,7 @@ padding: 3px;
     bottom: 0%;
     height: 250px;
     width: 33.33%;
-    background-color: #707070; 
+    background-color: #707070;
     color: #000000;
 }
 
@@ -361,7 +390,7 @@ padding: 3px;
     bottom: 0%;
     height: 250px;
     width: 33.33%;
-    background-color: #575757; 
+    background-color: #575757;
     color: #000000;
 }
 
@@ -372,20 +401,31 @@ padding: 3px;
     bottom: 0%;
     height: 250px;
     width: 33.33%;
-    background-color:#404040; 
-    color:#000000;
-    
+    background-color: #404040;
+    color: #000000;
+
 }
 
 
 #textedu {
-    position:absolute;
+    position: absolute;
     display: inline;
     bottom: 41.5%;
     right: 41.5%;
     color: #707070;
 }
 
+#textedu::before {
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 6px;
+    width: 47px;
+    left: -31px;
+    top: 25px;
+    transform: rotate(90deg);
+
+}
 
 #textdos {
     padding-top: 30px;
@@ -417,7 +457,7 @@ padding: 3px;
         height: 280px;
     }
 
-    50%{
+    50% {
 
         bottom: 47%;
         height: 280px;
@@ -431,22 +471,129 @@ padding: 3px;
     }
 }
 
+/* visual about me */
+
+.aboutme {
+    box-shadow: inset 0px -20px 20rem 20px #000000;
+}
+
 
 /* experiencia */
 
 
+.experiencia {
+    position: relative;
+    display: block;
+    height: 700px;
+    background-color: #2f2f2f;
+    
+}
+
+.tituloexp {
+    position: relative;
+    display: block;
+    height: 150px;
+    width: 90%;
+    background-color: #707070;
+    opacity: .7;
+    top: 10%;
+    margin: auto;
+}
+
+.tarjetaexp {
+    position: relative;
+    display: block;
+    height: 300px;
+    width: 90%;
+    top: 19%;
+    margin: auto;
+}
+
+#textexp {
+    position: absolute;
+    top: 34%;
+    margin-left: 5%;
+}
+
+#textexp::after {
+    
+    content: " ";
+    position: absolute;
+    background-color: #E10600;
+    height: 6px;
+    width: 47px;
+    left: -28px;
+    top: 20px;
+    transform: rotate(90deg);
+}
+
+/* tarjetas de experiencia */
+
+ .columna {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+    
+}
+.expindividual {
+    
+    width: 80%;
+    height: 61%;
+    border-left: solid 5px #E10600;
+    color: #707070;
+    margin: 10px;
+    
+} 
+
+.imagenexp {
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #707070;
+    background-color: #E10600;
+    justify-content: center;
+    align-items: center;
+    bottom: 67%;
+    right: 84%;
+}
+
+/* visual experiencia */
+
+.visualexp {
+    position: absolute;
+    display: inline;
+    height: 100%;
+    width: 25%;
+    background-color: #E10600;
+    opacity: .3;
+}
+
+#visualexpA {
+    left: 0%;
+}
+
+#visualexpB {
+    right: 0%;
+}
 /* skills */
 
 .skill {
     position: relative;
     height: 650px;
-    
+
 }
 
-.visualA, .visualB, .visualC, .visualD {
+.visualA,
+.visualB,
+.visualC,
+.visualD {
     position: absolute;
     display: inline;
-} 
+}
 
 .visualA {
     width: 50%;
@@ -483,16 +630,23 @@ padding: 3px;
 } */
 
 
- .barra, .progreso, .numskill, .textskill, .lineA,
- .lineB, .lineC, .lineD {
+.barra,
+.progreso,
+.numskill,
+.textskill,
+.lineA,
+.lineB,
+.lineC,
+.lineD {
     position: absolute;
     display: inline;
-   
+
 }
+
 .textskill {
     left: 45%;
     color: #241c1c;
-    
+
 }
 
 
@@ -500,64 +654,48 @@ padding: 3px;
 .lineA {
     top: 10%;
     right: 55%;
-    animation: li 3s ease;
+    /* animation: li 3s ease;  */
 }
-.lineA::before {
 
+.textskill::before {
     content: " ";
     position: absolute;
     background-color: #E10600;
-    height: 3px;
-    width: 72px;
-    
-
+    height: 6px;
+    width: 47px;
+    left: -29px;
+    top: 30px;
+    transform: rotate(90deg);
 }
 
 
-
-.lineB {
-    top: 10%;
-    right: 35.22%;
-    animation: lin 3s ease;
-    
-}
-.lineB::before {
-
-    content: " ";
-    position: absolute;
-    background-color: #E10600;
-    height: 3px;
-    width: 72px;
-    right: 3px;
-    
-}
 
 @keyframes lin {
 
     0% {
         top: 7%;
         width: 0;
-        transform: rotate(-180deg);
+        transform: rotate(0deg);
         opacity: 0;
     }
 
     100% {
         top: 10%;
-        transform: rotate(0deg);
-        width: 71px;        
+        transform: rotate(-180deg);
+        width: 71px;
         opacity: 1;
-        
+
     }
 }
 
 @keyframes li {
-    0% {       
+    0% {
         top: 7%;
         opacity: 0;
         transform: rotate(-180deg);
     }
 
-    100% { 
+    100% {
         top: 10%;
         opacity: 1;
         transform: rotate(0deg);
@@ -572,6 +710,21 @@ padding: 3px;
     top: 45%;
     width: 100%;
     left: 60px;
+}
+
+.botones {
+    position: absolute;
+    display: inline;
+    width: 200px;
+    height: 100px;
+    left: 15%;
+}
+
+#botonskill {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .collapse {
@@ -607,7 +760,8 @@ padding: 3px;
     border: none;
 }
 
-.frente, .reversa {
+.frente,
+.reversa {
     position: absolute;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -616,7 +770,7 @@ padding: 3px;
     width: 66%;
     height: 100%;
     color: #575757;
-    
+
 }
 
 
@@ -635,36 +789,37 @@ padding: 3px;
     width: 100%;
 }
 
-.numkill{
+.numkill {
     position: absolute;
     display: inline;
     justify-content: center;
     top: -5%;
     left: 10%;
     font-size: 1.7rem;
-    z-index: 1;;
+    z-index: 1;
+    ;
 }
 
 
 .frente {
- transform: rotateY(0deg); 
-}    
+    transform: rotateY(0deg);
+}
 
 .reversa {
     position: absolute;
-    transform: rotateY(180deg); 
-       
+    transform: rotateY(180deg);
+
 }
 
 
 
- .tarjeta:hover .frente {
+.tarjeta:hover .frente {
     transform: rotateY(-180deg);
 }
 
 .tarjeta:hover .reversa {
     transform: rotateY(0deg);
-} 
+}
 
 col {
     margin: 20px;
@@ -672,7 +827,7 @@ col {
 
 
 #endA {
-top: 0%;
+    top: 0%;
 
 }
 
@@ -685,20 +840,14 @@ top: 0%;
 }
 
 #endD {
-   top: 0%;
+    top: 0%;
 }
 
-  
 
 
 
-.botones {
-    position: absolute;
-    display: inline;
-    width: 200px;
-    height: 100px;
-    left: 15%;
-}
+
+
 
 
 #palabraskill {
@@ -707,19 +856,19 @@ top: 0%;
 }
 
 .palabra {
-    
+
     color: #241c1c;
     font-size: 20rem;
     display: inline;
     opacity: 0.5;
-    
+
 }
 
 .barracontdeveloper {
     position: absolute;
     height: 100%;
 }
- 
+
 .barra {
     background-color: rgba(225, 6, 0, 0.5);
     height: 20PX;
@@ -733,15 +882,15 @@ top: 0%;
 
 
 .progreso {
-background-color: #E10600;
-opacity: 1;
-height: 20PX;
-justify-content: center;
-height: 100%;
-width: 100%;
-top: 0%;
-left: 0%;
-border-radius: 12px;
+    background-color: #E10600;
+    opacity: 1;
+    height: 20PX;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 12px;
 
 
 
@@ -751,21 +900,21 @@ border-radius: 12px;
 
 #barraA {
     width: 87%;
-   
+
 }
 
 #barraB {
     width: 80%;
-    
+
 }
 
 #barraC {
     width: 60%;
-   
+
 }
 
 #barraD {
-    width: 95%; 
+    width: 95%;
 }
 
 /* skills idiomas */
@@ -850,41 +999,42 @@ border-radius: 12px;
 
 
 @media screen and (max-width:992px) {
-    
-    .web, .webA {
-        
+
+    .web,
+    .webA {
+
         display: contents;
-      
-    
+
+
     }
- 
+
     .me {
 
-        
-        width:100%;
-        
-        
-    } 
+
+        width: 100%;
+
+
+    }
 
     .personal {
-        width:100%;
+        width: 100%;
         right: 0;
 
     }
 
     .img {
 
-        width:100%;
+        width: 100%;
         right: 78px;
         top: -71.67%;
     }
 
-  #uno {
+    #uno {
         width: 100%;
         right: 0;
     }
 
-    #dos{
+    #dos {
         bottom: 0;
     }
 
@@ -896,15 +1046,15 @@ border-radius: 12px;
         right: 27%;
         left: -6%;
     }
-    
+
 
     .colapskills {
         position: absolute;
-    display: inline;
-    width: 239px;
-    height: 300px;
-    left: 15%;
-    top: 45px;
+        display: inline;
+        width: 239px;
+        height: 300px;
+        left: 15%;
+        top: 45px;
     }
 
     .skillidiomas {
@@ -914,6 +1064,7 @@ border-radius: 12px;
         width: 100%;
         right: 23%;
     }
+
     .colapskills {
         position: absolute;
         display: inline;
@@ -924,5 +1075,3 @@ border-radius: 12px;
     }
 
 }
-
-
