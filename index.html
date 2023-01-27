@@ -19,38 +19,10 @@
   <!-- titulo -->
   <title>C.V | Brian Balbuena</title>
   <!-- favicom -->
-  <link rel="icon" href="#">
+  <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f6ab4776069169.5c5ea7aab242c.jpg">
 </head>
 
 <body>
-
-  <!-- barra de navegacion -->
-  <!-- <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark " data-bs-theme="dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" 
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse align-items-center" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">
-          <img src="#" width="50">
-        </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center ">
-          <li class="nav-item">
-            <a class="nav-link"  href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> </ul>
-  </div>
-   -->
 
   <!-- hero -->
   <section class="hero container-fluid text-center">
@@ -65,23 +37,29 @@
 
         <div class="collapse navbar-collapse align-items-center" id="navbarTogglerDemo01">
 
-          <a class="navbar-brand" href="#">
-            <img src="#" width="50">
+          <a class="navbar-brand" >
+            <img id="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f6ab4776069169.5c5ea7aab242c.jpg" width="50">
           </a>
 
-          <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+          <ul class="navegacion navbar-nav d-flex justify-content-center align-items-center ">
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="./index.html#educacion">Education</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="./index.html#exper">Experiences</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link ">Disabled</a>
+              <a class="nav-link" href="./index.html#sk">Skills</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#footer">Contact</a>
+            </li>
+
+            
 
           </ul>
 
@@ -108,14 +86,14 @@
   <section class="aboutme container-fluid text-center bg-dark">
     <div class="visualmi"></div>
     <div class="me bg-dark lh-1">
-      <h5 class="parrafome display-6" id="textme">About me<span id="punto">.</span></h5>
+      <h5 class="titulome display-6" id="textme">About me<span id="punto">.</span></h5>
       <p class="parrafome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga modi et culpa,
         quidem, blanditiis magnam nam esse corporis voluptate qui. Aliquam eius similique molestiae esse,
         quam asperiores delectus vitae?</p>
     </div>
 
     <div class="personal ">
-      <h3 class="parrafopers text-center">Personal Info<span id="punto">.</span></h3>
+      <h3 class="parrafopers text-center display-6">Personal Info<span id="punto">.</span></h3>
       <ul class="lista list-group text-start">
         <li><span class="fw-bold">Name</span><span id="punto">:</span> Thomas Shelby</li>
         <li><span class="fw-bold">Age</span><span id="punto">:</span> 45</li>
@@ -125,7 +103,7 @@
     </div>
 
     <div class="imagen">
-      <img src="imagenes/foto.png" alt="foto sacada de perfil">
+      <img src="imagenes/foto.png" alt="foto sacada de perfil" id="imgperfil">
     </div>
 
     <div class="visualmi" id="miA"></div>
@@ -135,7 +113,7 @@
 
   <!-- educacion -->
 
-  <section class="edu container-fluid text-center ">
+  <section id="educacion" class="edu container-fluid text-center ">
     <div class="deco"></div>
 
     <div id="uno" class="educa text-center">
@@ -170,7 +148,7 @@
 
   <!-- experiencia -->
 
-  <section class="experiencia container-fluid align-content-center">
+  <section id="exper" class="experiencia container-fluid align-content-center">
     <div class="visualexp" id="visualexpA"></div>
     <div class="visualexp" id="visualexpB"></div>
     <div class="tituloexp">
@@ -234,7 +212,7 @@
 
   <!-- skills -->
 
-  <section class="skill container-fluid bg-dark">
+  <section id="sk" class="skill container-fluid bg-dark">
     <div class="visualA"></div>
     <div class="visualB"></div>
     <div class="visualC">
@@ -413,7 +391,7 @@
     </section>
   </section>
 
-  <footer>
+  <footer id="footer">
     <section class="final container-fluid">
       <section class="redes">
         <div class="container text-center">
@@ -455,6 +433,8 @@
       </div>
 
       <div id="separacion"></div>
+
+      <a href="./index.html" class="enlacefinal stretched-link">Home</a>
 
     </section>
 
