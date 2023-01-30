@@ -464,7 +464,7 @@ li {
 .experiencia {
     position: relative;
     display: block;
-    height: 700px;
+    height: 718px;
     background-color: #2f2f2f;
     
 }
@@ -563,7 +563,7 @@ li {
 
 .skill {
     position: relative;
-    height: 650px;
+    height: 735px;
 
 }
 
@@ -597,7 +597,7 @@ li {
     display: flex;
     width: 80%;
     height: 150px;
-    /* top: 7.33%; */
+     top: 65px;
     left: 10%;
     /* margin: 0; */
     /* justify-content: space-between; */
@@ -693,7 +693,7 @@ li {
     position: absolute;
     display: inline;
     top: 45%;
-    width: 100%;
+    width: 96%;
     left: 60px;
 }
 
@@ -1000,6 +1000,25 @@ col {
 
 
 
+
+#boton {
+    position: absolute;
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:992px) {
 
     .web,
@@ -1063,7 +1082,15 @@ col {
         left: -6%;
     }
 
-
+    .botones {
+        position: absolute;
+        display: inline;
+        width: 200px;
+        height: 50px;
+        left: 10%;
+        top: 155px;
+    }
+    
     .colapskills {
         position: absolute;
         display: inline;
@@ -1073,21 +1100,37 @@ col {
         top: 45px;
     }
 
+    .botonesidiomas {
+        position: absolute;
+        display: inline;
+        width: 204px;
+        height: 50px;
+        right: 23.5%;
+    }
+
     .skillidiomas {
         position: absolute;
         display: inline;
-        top: 58%;
+        top: 69%;
         width: 100%;
         right: 23%;
+    }
+    .colapidiomas{
+        position: absolute;
+    display: inline;
+    width: 250px;
+    height: 285px;
+    left: 26%;
+    top: 26px;
     }
 
     .colapskills {
         position: absolute;
         display: inline;
-        width: 250px;
-        height: 285px;
-        left: 32%;
-        top: 43px;
+        width: 242px;
+        height: 278px;
+        left: 10%;
+        top: 180px;
     }
     .lista{
         top: 50%;
@@ -1100,10 +1143,41 @@ col {
     }
     .navegacion {
         position: absolute;
-        left: 31%;
+        left: 21.5%;
         margin: 10px;
         background-color: #707070;
         opacity: .8;
+        font-size: 24px;
+        border-radius: 10px;
         z-index: 2;
     }
+    
+    .tarjetaexp {
+        top: 8%;
+    }
+    .columna {
+        height: 163px;
+    }
+
+    .redes {
+        position: absolute;
+        display: flex;
+        width: 80%;
+        height: 50px;
+        align-items: center;
+        left: 10%;
+        top: 60%;
+    }
+    #separacion {
+        position: absolute;
+    display: inline;
+    align-items: center;
+    width: 40%;
+    height: 1.5px;
+    top: 50%;
+    left: 36%;
+    background-color: #707070;
+    }
+
+
 }
