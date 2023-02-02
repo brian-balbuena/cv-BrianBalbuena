@@ -138,6 +138,7 @@ h4::before {
 .acermiA {
     position: absolute;
     display: inline;
+    overflow: hidden;
     height: 400px;
     width: 600px;
     bottom: 35%;
