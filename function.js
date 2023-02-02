@@ -18,14 +18,14 @@ document.getElementById('linkedin').addEventListener('click', function () {
 
 // visuales
 
-document.getElementById('educacion').addEventListener('mouseover', function () {
-    document.getElementById('decoracion').style.animation = "expandir 4s ";
+document.getElementById('textedu').addEventListener('mouseover', function () {
+    document.getElementById('decoracion').classList.toggle('decoB');
 });
 
 document.getElementById('botonmi').addEventListener('click', function () {
     document.getElementById('acerA').classList.toggle('acermiAA')
     document.getElementById('datospersonales').classList.toggle('datospersonalesA')
-
+    document.getElementById('textme').classList.toggle('textmeA')
    
 });
 
