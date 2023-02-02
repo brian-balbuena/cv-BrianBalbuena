@@ -20,7 +20,7 @@
     background-image: url(imagenes/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 770px;
     box-shadow: inset 0px -20px 20rem 20px #000000;
 }
 
@@ -128,32 +128,138 @@ h4::before {
 
 .aboutme {
     position: relative;
+    display: flex;
+    justify-content: center;
     height: 500px;
-
+    box-shadow: inset 0px -20px 20rem 20px #000000;
 
 }
 
-.me {
+.acermiA {
+    position: absolute;
+    display: inline;
+    height: 400px;
+    width: 600px;
+    bottom: 35%;
+    border-radius: 20px;
+    color: #707070;
+    box-shadow: inset 0px 0px 6rem 18px #000000;
+    border: solid 1px black;
+    z-index: 1;
+    transition: 6s;
+}
 
-    /* posicion */
+.dperso {
+    opacity: 1;
+    transition: 3s;
+}
+
+.acermiAA {
+    position: absolute;
+    display: inline;
+    height: 0px;
+    width: 0px;
+    bottom: 35%;
+    border-radius: 20px;
+    color: #707070;
+    box-shadow: inset 0px 0px 6rem 18px #000000;
+    border: solid 1px black;
+    z-index: 1;
+    transition: 6s;
+}
+.datospersonalesA {
+    opacity: 0;
+    /* transform: rotate(180deg); */
+}
+
+
+
+
+
+#textme {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+.acermiB {
+    position: absolute;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    bottom: 35%;
+    border-radius: 20px;
+    color: #707070;
+    box-shadow: inset 0px 0px 6rem 18px #000000;
+    border: solid 1px black
+}
+#sobremi {
+    display: inline;
+
+}
+
+.lista {
+    position: absolute;
+    right: 1%;
+    top: 20%;
+    font-size: 1.5rem;
+    justify-content: left;
+    list-style: none;
+}
+
+.imagen {
+    position: relative;
+    display: inline-flex;
+    height: 280px;
+    right: 27.5%;
+    width: 272px;
+    top: 16%;
+   
+}
+
+#imgperfil {
+    position: absolute;
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+/* boton  */
+
+#botonmi {
+    position: absolute;
+    display: inline;
+    background-color: #2f2f2f;
+    top: 57%;
+    border-radius: 20px;
+    z-index: 3;
+}
+#botonmi:hover {
+    color: white ;
+}
+
+
+
+
+
+
+/* .me {
+
+   
     position: absolute;
     display: inline;
     height: 16rem;
     right: 0;
     width: 33.33%;
     top: -20%;
-    /* estilo */
-    box-shadow: 0 0 0.1rem #707070, 0 0 0.2rem #000000, 
-    0 0 2rem #000000, 0 0 20rem #000000, 0 0 0.2rem #000000, 
-    inset 0 0px 2rem #000000;
+  
+    box-shadow: 0 0 0.1rem #707070, 0 0 0.2rem #000000,
+        0 0 2rem #000000, 0 0 20rem #000000, 0 0 0.2rem #000000,
+        inset 0 0px 2rem #000000;
     border-radius: 10px;
-    /* animation: neon 5s ease; */
-
-    /* letra */
     color: black;
-}
+} */
 
-#textme::before {
+/* #textme::before {
     content: " ";
     position: absolute;
     background-color: #E10600;
@@ -162,7 +268,7 @@ h4::before {
     left: -32px;
     top: 25px;
     transform: rotate(90deg);
-}
+} */
 
 
 /* .me::after {
@@ -175,7 +281,7 @@ h4::before {
 
 } */
 
-.titulome {
+/* .titulome {
     position: absolute;
     top: 10%;
     left: 31%;
@@ -188,7 +294,7 @@ h4::before {
 }
 
 .personal {
-    /* posicion */
+    
     position: absolute;
     display: inline;
     height: 15.9rem;
@@ -196,8 +302,7 @@ h4::before {
     width: 33.33%;
     top: 33.33%;
     z-index: 1;
-    /* estilo */
-    /* animation: neon 5s ease;  */
+   
 }
 
 @keyframes neon {
@@ -225,32 +330,23 @@ h4::before {
 
     }
 }
+ */
 
 
-.imagen {
-    /* posicion */
-    position: absolute;
-    display: inline;
-    height: 321px;
-    right: 78.66%;
-    width: 21.33%;
-    top: 36%;
-    z-index: 1;
-}
-    /* estilo */
+/* estilo */
 
 
 
-#imgperfil {
+/* #imgperfil {
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-.lista {
+  .lista {
     position: absolute;
     display: inline;
-    /* height: 120px; */
+    
     font-size: 1.3rem;
     color: #000000;
     left: 26%;
@@ -263,7 +359,7 @@ li {
     padding: 3px;
 
 
-}
+}   */
 
 /* .list-group::after {
     
@@ -275,7 +371,7 @@ li {
     animation: linea 3s ease;
 } */
 
-.parrafopers {
+/* .parrafopers {
 
     position: absolute;
     color: #000000;
@@ -293,11 +389,11 @@ li {
     top: 24px;
     transform: rotate(90deg);
 
-}
+} */
 
 /* visual acercademi */
 
-.visualmi {
+/* .visualmiA {
     position: absolute;
     display: inline;
 }
@@ -310,15 +406,40 @@ li {
     left: 20%
 }
 
-#miB {
-
+.visualmi{
+    position: absolute;
+    display: inline;
     height: 51%;
-    width: 1.5%;
+    width: 33.5%;
     background-color: #707070;
     opacity: 0.3;
-    right: 16.4%;
+    right: 0%;
     bottom: 69%;
+    border-radius: 10px;
+    transition: 6s;
 }
+.miBB {
+    width: 0%;
+    transition: 6s;
+}
+
+#cortina {
+    position: absolute;
+    align-content: center;
+    z-index: 1;
+    top: 85%;
+    left: 36%;
+}
+
+
+@keyframes cortina {
+    0% {
+        width: 33.5%;
+    }
+    100%{
+        width: 0%;
+    }
+} */
 
 
 /* educacion  */
@@ -418,6 +539,20 @@ li {
     bottom: 50%;
     height: 250px;
     width: 10%;
+    /* border: solid 2px #E10600; */
+    z-index: 1;
+    background-color: #E10600;
+    opacity: .3;
+    /* animation: expandir 4s ease;  */
+}
+
+.decoB {
+    position: absolute;
+    display: inline;
+    right: 56.65%;
+    bottom: 50%;
+    height: 250px;
+    width: 10%;
     border: solid 2px #E10600;
     z-index: 1;
     background-color: #E10600;
@@ -451,11 +586,6 @@ li {
     }
 }
 
-/* visual about me */
-
-.aboutme {
-    box-shadow: inset 0px -20px 20rem 20px #000000;
-}
 
 
 /* experiencia */
@@ -466,7 +596,7 @@ li {
     display: block;
     height: 718px;
     background-color: #2f2f2f;
-    
+
 }
 
 .tituloexp {
@@ -496,7 +626,7 @@ li {
 }
 
 #textexp::after {
-    
+
     content: " ";
     position: absolute;
     background-color: #E10600;
@@ -509,24 +639,25 @@ li {
 
 /* tarjetas de experiencia */
 
- .columna {
+.columna {
     position: relative;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: .9;
-    
+
 }
+
 .expindividual {
-    
+
     width: 80%;
     height: 61%;
     border-left: solid 5px #E10600;
     color: #707070;
     margin: 10px;
-    
-} 
+
+}
 
 .imagenexp {
     position: absolute;
@@ -559,6 +690,7 @@ li {
 #visualexpB {
     right: 0%;
 }
+
 /* skills */
 
 .skill {
@@ -597,7 +729,7 @@ li {
     display: flex;
     width: 80%;
     height: 150px;
-     top: 65px;
+    top: 65px;
     left: 10%;
     /* margin: 0; */
     /* justify-content: space-between; */
@@ -1007,10 +1139,109 @@ col {
 }
 
 
+/* botones */
+.contactame {
+    display: flex;
+    align-items: center;
+    color: #241c1c;
+    text-decoration: none;
+}
+
+.contactame:hover {
+    color: #575757;
+    text-decoration: underline;
+}
+
+.recuadro {
+    position: absolute;
+    /* display: inline; */
+    width: 150px;
+    height: 95px;
+    background-color: #fffff0;
+    opacity: .7;
+    border-radius: 28px;
+    left: 34.5%;
+    /* top: -6%; */
+    display: none;
+}
+
+.visible {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+#datosmail {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 0.9rem;
+    color: black;
+
+}
 
 
+.recuadroA {
+    position: absolute;
+    width: 150px;
+    height: 95px;
+    background-color: #fffff0;
+    opacity: .7;
+    border-radius: 28px;
+    left: 44.5%;
+    display: none;
+}
+
+#datoswpp {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 0.9rem;
+    color: black;
+
+}
+
+.visibleA {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
 
 
+.recuadroB {
+    position: absolute;
+    width: 150px;
+    height: 95px;
+    background-color: #fffff0;
+    opacity: .7;
+    border-radius: 28px;
+    left: 54.5%;
+    display: none;
+}
+
+#datosin {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 0.9rem;
+    color: black;
+
+}
+
+.visibleB {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
 
 
 
@@ -1053,6 +1284,7 @@ col {
         right: 42%;
         z-index: 1;
     }
+
     #miA {
         position: absolute;
         height: 69%;
@@ -1062,7 +1294,7 @@ col {
         opacity: 0.2;
         left: 20%;
     }
-    
+
 
     #uno {
         width: 100%;
@@ -1090,7 +1322,7 @@ col {
         left: 10%;
         top: 155px;
     }
-    
+
     .colapskills {
         position: absolute;
         display: inline;
@@ -1115,13 +1347,14 @@ col {
         width: 100%;
         right: 23%;
     }
-    .colapidiomas{
+
+    .colapidiomas {
         position: absolute;
-    display: inline;
-    width: 250px;
-    height: 285px;
-    left: 26%;
-    top: 26px;
+        display: inline;
+        width: 250px;
+        height: 285px;
+        left: 26%;
+        top: 26px;
     }
 
     .colapskills {
@@ -1132,15 +1365,19 @@ col {
         left: 10%;
         top: 180px;
     }
-    .lista{
+
+    .lista {
         top: 50%;
     }
-    .parrafopers{
+
+    .parrafopers {
         bottom: 75%;
     }
+
     .parrafopers::before {
         top: 17%;
     }
+
     .navegacion {
         position: absolute;
         left: 21.5%;
@@ -1151,10 +1388,11 @@ col {
         border-radius: 10px;
         z-index: 2;
     }
-    
+
     .tarjetaexp {
         top: 8%;
     }
+
     .columna {
         height: 163px;
     }
@@ -1168,15 +1406,22 @@ col {
         left: 10%;
         top: 60%;
     }
+
     #separacion {
         position: absolute;
-    display: inline;
-    align-items: center;
-    width: 40%;
-    height: 1.5px;
-    top: 50%;
-    left: 36%;
-    background-color: #707070;
+        display: inline;
+        align-items: center;
+        width: 40%;
+        height: 1.5px;
+        top: 50%;
+        left: 36%;
+        background-color: #707070;
+    }
+
+    .recuadro,
+    .recuadroA,
+    .recuadroB {
+        left: 33.33%;
     }
 
 
