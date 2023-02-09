@@ -30,10 +30,4 @@ document.getElementById('botonmi').addEventListener('click', function () {
 });
 
 
-//  if (document.getElementById('miB').classList.toggle('visualmi')) {
-//     document.getElementById('cortina').innerHTML = "abrir cortina";
-//  } else {
-//     document.getElementById('cortina').innerHTML = "cerrar ventana";
-//   }
-
  
