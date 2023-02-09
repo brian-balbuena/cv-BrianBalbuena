@@ -1,6 +1,11 @@
+
+
 /* hero */
 .navbar {
     position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
 
 }
 
@@ -69,33 +74,7 @@ h1::before {
     }
 }
 
-/* h4 {
-    display: inline;
-position: relative;
-color: aqua;
-padding-left: 35px;
-text-align: center;
 
-
-
-} */
-
-/* h4::after {
-
-    content: " ";
-    position: absolute;
-    background-color: red;
-    height: 3px;
-    width: 50%;
-    bottom: 0;
-    
-   
-}  */
-#logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
 
 #normal {
 
@@ -171,7 +150,6 @@ h4::before {
 
 .datospersonalesA {
     font-size: 0rem;
-    /* transform: rotate(180deg); */
 }
 
 .textmeA {
@@ -239,7 +217,8 @@ h4::before {
 #botonmi {
     position: absolute;
     display: inline;
-    background-color: #2f2f2f;
+    width: 80px;
+    color: #707070;
     top: 57%;
     border-radius: 20px;
     z-index: 3;
@@ -365,40 +344,10 @@ h4::before {
     bottom: 50%;
     height: 250px;
     width: 21%;
-    /* border: solid 2px #E10600; */
     z-index: 1;
     background-color: #E10600;
     opacity: .3;
-    /* animation: expandir 4s ease;  */
 }
-
-@keyframes expandir {
-    0% {
-
-        bottom: 50%;
-        height: 250px;
-    }
-
-    25% {
-        bottom: 47%;
-        height: 280px;
-    }
-
-    50% {
-
-        bottom: 47%;
-        height: 280px;
-
-    }
-
-    100% {
-
-        bottom: 50%;
-        height: 250px;
-    }
-}
-
-
 
 /* experiencia */
 
@@ -543,20 +492,11 @@ h4::before {
     height: 150px;
     top: 65px;
     left: 10%;
-    /* margin: 0; */
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #fffff0;
     opacity: .5;
 }
 
-/* .visualD {
-    width: 500px;
-    height: 200px;
-    top: 20%;
-    bottom: 20%;
-    border: #000000 solid 2px;
-} */
 
 
 .barra,
@@ -651,6 +591,7 @@ h4::before {
 
 #botonskill {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -812,7 +753,7 @@ col {
 
 .progreso {
     background-color: #E10600;
-    opacity: 1;
+    opacity: .6;
     height: 20PX;
     justify-content: center;
     height: 100%;
