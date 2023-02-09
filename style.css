@@ -907,14 +907,12 @@ col {
 
 .recuadro {
     position: absolute;
-    /* display: inline; */
     width: 150px;
     height: 95px;
     background-color: #fffff0;
     opacity: .7;
     border-radius: 28px;
     left: 34.5%;
-    /* top: -6%; */
     display: none;
 }
 
@@ -1001,7 +999,7 @@ col {
 
 
 
-
+/* media queries */
 
 @media screen and (max-width:992px) {
 
